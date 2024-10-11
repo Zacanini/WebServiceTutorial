@@ -10,6 +10,8 @@ module.exports = app => {
     router.get("/published", tutorials.findAllPublished);
   
     router.get("/:id", tutorials.findOne);
+
+    router.get("/published", tutorials.findAllPublished);
   
     router.put("/:id", tutorials.update);
   

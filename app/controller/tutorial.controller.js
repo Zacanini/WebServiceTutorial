@@ -46,6 +46,20 @@ exports.findAll = (req, res) => {
         });
 };
 
+exports.findAllPublished = (req, res) => {
+    Tutorial.findAll({ where: { published: true } })
+        .then(nums => {
+            res.send({
+                message: `${nums} tutorials was published successfully!`,
+            });
+        })
+        .catch(err => {
+            res.status(500).send({
+                message: err.message || "Some error ocurred",
+            });
+        });
+}
+
 exports.findOne = (req, res) => {
     const id = req.params.id;
 

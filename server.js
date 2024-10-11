@@ -22,6 +22,8 @@ app.get("/" , (_,res)=>{
     res.json({message:"Welcome!"})
 })
 
+require("./app/routes/tutorial.routes")(app);
+
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, ()=>{
