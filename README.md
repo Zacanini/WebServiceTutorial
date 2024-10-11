@@ -16,3 +16,15 @@ Express: Framework minimalista para Node.js que facilita a criação de rotas e 
 Sequelize: ORM para Node.js que facilita a comunicação com o banco de dados MySQL.
 MySQL: Sistema de gerenciamento de banco de dados relacional.
 CORS: Middleware para habilitar o compartilhamento de recursos entre diferentes origens no navegador.
+
+## Project Setup
+
+```http
+  npm install
+```
+
+## Run
+```http
+  node server.js
+```
+
